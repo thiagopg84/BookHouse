@@ -1,0 +1,174 @@
+/* Google fonts --------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* CSS basic settings --------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #6d0404;
+    --color-secondary: #420808;
+    --font: 'Merriweather', serif;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Tags --------------------------------------------------------- */
+
+table {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: white;
+    border: none;
+}
+
+
+tr:not(:first-child) td:not(:first-child) {
+    border-top: 1px solid #6700b1;
+}
+
+tr:first-child td:not(:nth-child(1)) {
+    font-style: italic;
+    font-size: 1.4rem;
+    background-color: #606061;
+}
+
+td:first-child {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+tr:not(:first-child) td:not(:first-child) {
+    background-color: white;
+    color: indigo;
+}
+
+tr:not(:first-child) td:nth-child(odd):not(:first-child) {
+    background-color: #dedede;
+    color: indigo;
+}
+
+/* Conteúdo --------------------------------------------------------- */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30rem 10rem 20rem;
+    grid-gap: .5rem;
+}
+
+.div1 {
+    background-color: #3a3a3c;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    background-color: white;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 picture > img {
+    width: 30rem;
+}
+
+.div3 {
+    background-color: white;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div3__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div3__container p:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.div4 {
+    background-color: indigo;
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: 10% repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+    grid-column-gap: 2rem;
+    color: white;
+}
+
+.book-quote {
+    padding: 1rem;
+    background-color: #7117b3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.book-quote__text {
+    font-size: 1.4rem;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.book-quote__title {
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+/*
+
+- DIV 1
+Coloque uma tabela para listar 10 livros e seus dados, como título, autores, edição e valor, que devem ser organizados em colunas;
+
+- DIV 2
+Adicione uma imagem representando o logotipo da loja;
+
+- DIV 3
+Adicione os contatos, como telefone, Instagram e Facebook;
+
+- DIV 4
+Adicione parágrafos e coloque cinco frases dos livros mais vendidos para inspirar os leitores.
+
+*/
