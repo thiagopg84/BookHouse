@@ -38,11 +38,11 @@ let populateTable = (bookCollection) => {
         <tr>
             <td>${bookCollection.categories[i]}</td>
         `     
-        for (let a = 0; a < bookCollection.length; a++) {
+        bookCollection.forEach((e, index) => {
             htmlOutput += `
-            <td>${bookCollection[a].bookInfo[Object.getOwnPropertyNames(bookCollection[a].bookInfo)[i]]}</td>
+            <td>${e.bookInfo[Object.getOwnPropertyNames(e.bookInfo)[i]]}</td>
             `
-        }
+        })
         htmlOutput += `</tr>
         `
     }
