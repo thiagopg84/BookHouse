@@ -53,8 +53,8 @@ populateTable(myBooks);
 div1.innerHTML = htmlOutput;
 let mySortedBooks = [];
 
-const populateMostSold = () => {
-    mySortedBooks = [...myBooks].sort((a, b) => { 
+const populateMostSold = (bookArraySource) => {
+    mySortedBooks = [...bookArraySource].sort((a, b) => { 
         return b.numberSales - a.numberSales;
     });
 
@@ -71,4 +71,4 @@ const populateMostSold = () => {
     return mostSoldBooksHtmlOutput;
 }
 
-div4.innerHTML = (populateMostSold());
+div4.innerHTML = (populateMostSold(myBooks));
