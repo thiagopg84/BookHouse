@@ -40,18 +40,17 @@ table {
     border: none;
 }
 
-
-tr:not(:first-child) td:not(:first-child) {
+tr:not(:first-child) td {
     border-top: 1px solid #6700b1;
 }
 
-tr:first-child td:not(:nth-child(1)) {
+tr:first-child td {
     font-style: italic;
-    font-size: 1.4rem;
-    background-color: #606061;
+    /* font-size: 1.4rem; */
+    /* background-color: #606061; */
 }
 
-td:first-child {
+tr:first-child {
     font-size: 2rem;
 }
 
@@ -64,10 +63,28 @@ tr:not(:first-child) td:not(:first-child) {
     color: indigo;
 }
 
-tr:not(:first-child) td:nth-child(odd):not(:first-child) {
+tr:not(:first-child) td:nth-child(odd) {
     background-color: #dedede;
     color: indigo;
 }
+
+tr:not(:first-child) td:first-child{
+    width: 50%;
+}
+tr:not(:first-child) td:nth-child(2){
+    width: 20%;
+}
+tr:not(:first-child) td:nth-child(3){
+    width: 10%;
+}
+tr:not(:first-child) td:nth-child(4){
+    width: 20%;   
+}
+
+tr:first-child td:not(:last-child) {
+    border-right: 1px solid white;
+}
+
 
 /* Conteúdo --------------------------------------------------------- */
 
