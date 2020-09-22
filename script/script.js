@@ -31,9 +31,6 @@ let myNewBook10 = new Book('book10', 'Miguel e os Demônios', 'Lourenço Mutarel
 
 myBooks.categories = ['Título', 'Autor', 'Edição', 'Preço'];
 
-console.log(Object.getOwnPropertyNames(myBooks[0].bookInfo))
-console.log(myBooks[0]['bookInfo'])
-
 let populateTable = (bookCollection) => {
     
     let htmlOutput = `<table><tr>`;
