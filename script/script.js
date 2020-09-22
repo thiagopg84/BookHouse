@@ -1,7 +1,6 @@
 const div1 = document.querySelector('#div1');
 const div4 = document.querySelector('#div4');
 
-
 let myBooks = [];
 class Book {
     constructor (bookId, bookName, bookAuthor, bookEdition, bookPrice, bookQuote, numberSales) {
